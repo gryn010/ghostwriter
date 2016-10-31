@@ -1,0 +1,21 @@
+created: 20161031175711824
+creator: venomspinner
+modified: 20161031183204988
+modifier: venomspinner
+tags: Introduction
+title: About the Topbar
+type: text/vnd.tiddlywiki
+
+The red button on the topmost most saying "Irreverent-Mudblood" derives its content from ''site title''. You can change it using Control Panel > Info > Basics > Title of this ~TiddlyWiki. Above the story-river, three section buttons can be seen 
+
+* ''Home'' - by default it opens the ''last 3 modified posts'', as long as they are not a system tiddler. The filter can be modified to your needs at __Control Panel > Info > Default tiddlers.__
+* ''Contents'' - by default opens a table of contents. This table of contents is made by a ''modified toc macro''. You can use the macro in the following format
+`<div class="post-index">
+<<tocghost-selective-expandable "Contents">>
+</div>`
+
+where //Contents// is the root tag. Should you decide to stay witht the usual TW5 toc macro, that can be done too. 
+
+* ''About'' - Where you can furnish credits or basic info about your blog. 
+
+All three can be customised and if needed more buttons added by editing [[$:/ghostwriter/Topbar]]

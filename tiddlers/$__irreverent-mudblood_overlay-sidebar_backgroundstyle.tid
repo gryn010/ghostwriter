@@ -1,0 +1,27 @@
+created: 20161030153934135
+modified: 20161031174446330
+tags: $:/OverlaySidebar $:/irreverent-mudblood/ghostwriter
+title: $:/irreverent-mudblood/overlay-sidebar/backgroundstyle
+type: text/vnd.tiddlywiki
+
+<style>
+@media only screen and (min-width: 768px) {
+.tc-sidebar-scrollable { 
+background-color: #FEFEFE; 
+z-index: 1000;
+padding: 42px 0 28px 42px;
+width:55%;
+border-left: 1px solid #e1e1e1;
+}
+}
+
+@media only screen and (max-width: 768px) {
+.tc-sidebar-scrollable { 
+background-color:#FEFEFE; 
+padding: 42px 0 28px 42px;
+z-index: 1000; 
+width:100%; 
+border-left: 1px solid #e1e1e1;
+left:10%;}
+}
+</style>

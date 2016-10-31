@@ -1,0 +1,30 @@
+created: 20161030153009897
+modified: 20161031174446312
+tags: $:/tags/Stylesheet $:/OverlaySidebar $:/irreverent-mudblood/ghostwriter
+title: $:/irreverent-mudblood/overlay-sidebar/stylesheet
+type: text/vnd.tiddlywiki
+
+.roundbtn {
+background-color:#FFFDE7;
+font-size: 25px; 
+position: relative;
+display: inline-block;
+width: 35px;
+height: 35px;
+cursor: pointer; 
+border: none; 
+border-radius:100px; 
+box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);fill: #fff;
+}
+
+.roundbtn span {
+font-size:15px;  
+position: absolute;  
+top: 0;  right: 0;    
+bottom: 0;    
+left: 0;    
+overflow: auto;    
+width: 50%;    
+height: 50%;    
+margin: auto; fill: #fff;
+}
