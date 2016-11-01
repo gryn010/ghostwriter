@@ -1,0 +1,206 @@
+[
+    {
+        "text": "600",
+        "bag": "default",
+        "revision": "0",
+        "type": "text/vnd.tiddlywiki",
+        "title": "$:/config/AnimationDuration",
+        "tags": "$:/irreverent-mudblood/ghostwriter",
+        "modifier": "venomspinner",
+        "modified": "20161031174446166",
+        "creator": "venomspinner",
+        "created": "20161028170329291"
+    },
+    {
+        "text": "<$scrollable fallthrough=\"no\" class=\"tc-sidebar-scrollable\">\n\n<div class=\"tc-sidebar-header\">\n\n<$reveal state=\"$:/state/sidebar\" type=\"match\" text=\"yes\" default=\"no\" retain=\"yes\" animate=\"yes\">\n\n{{||$:/core/ui/PageTemplate/pagecontrols}}\n\n<$transclude tiddler=\"$:/core/ui/SideBarLists\" mode=\"inline\"/>\n\n</$reveal>\n\n</div>\n\n</$scrollable>",
+        "bag": "default",
+        "revision": "0",
+        "type": "text/vnd.tiddlywiki",
+        "title": "$:/core/ui/PageTemplate/sidebar",
+        "tags": "$:/tags/PageTemplate $:/irreverent-mudblood/ghostwriter",
+        "modified": "20161031174446017",
+        "created": "20161030145349771"
+    },
+    {
+        "text": "<$reveal state=\"$:/state/sidebar\" type=\"nomatch\" text=\"no\" default=\"no\">\n<$button set=\"$:/state/sidebar\" setTo=\"no\" tooltip={{$:/language/Buttons/HideSideBar/Hint}} aria-label={{$:/language/Buttons/HideSideBar/Caption}} class=\"roundbtn\">\n<span>{{$:/core/images/right-arrow}}</span>\n{{$:/irreverent-mudblood/overlay-sidebar/backgroundstyle}}\n</$button>\n</$reveal>\n<$reveal state=\"$:/state/sidebar\" type=\"match\" text=\"no\" default=\"no\">\n<$button set=\"$:/state/sidebar\" setTo=\"yes\" tooltip={{$:/language/Buttons/ShowSideBar/Hint}} aria-label={{$:/language/Buttons/ShowSideBar/Caption}} class=\"roundbtn\"><span>{{$:/core/images/left-arrow}}</span>\n{{$:/irreverent-mudblood/overlay-sidebar/backgroundstyle2}}\n</$button>\n</$reveal>\n",
+        "bag": "default",
+        "revision": "0",
+        "type": "text/vnd.tiddlywiki",
+        "title": "$:/core/ui/TopBar/menu",
+        "tags": "$:/tags/TopRightBar $:/irreverent-mudblood/ghostwriter",
+        "modifier": "Dr. Rizwan Ishak",
+        "modified": "20161031174446206",
+        "creator": "Dr. Rizwan Ishak",
+        "created": "20161002082547234"
+    },
+    {
+        "text": "[!is[system]![TableOfContents]!sort[modified]limit[3]]",
+        "bag": "default",
+        "revision": "0",
+        "type": "text/vnd.tiddlywiki",
+        "title": "$:/DefaultTiddlers",
+        "tags": "$:/irreverent-mudblood/ghostwriter",
+        "modifier": "venomspinner",
+        "modified": "20161031174446196",
+        "creator": "venomspinner",
+        "created": "20161028070140552"
+    },
+    {
+        "text": "---\n/*Base*/\n\n---\n\nhtml, body {\n  height: 100%;\n }\n\nbody {\n  background: #fefefe;\n  color: #424242;\n  font-family: \"Open Sans\", arial, sans-serif;\n  font-size: 18px;\n }\n\nh1, h2, h3, h4, h5, h6 {\n  margin-bottom: 33px;\n  text-transform: none; \n}\n\nh1 {\n  font-size: 26px; }\n\nh2 {\n  font-size: 24px; }\n\nh3 {\n  font-size: 20px;\n  margin-bottom: 20px; }\n\nh4 {\n  font-size: 18px;\n  margin-bottom: 18px; }\n\nh5 {\n  font-size: 16px;\n  margin-bottom: 15px; }\n\nh6 {\n  font-size: 14px;\n  margin-bottom: 12px; }\n\np {\n  line-height: 1.8;\n  margin: 0 0 30px; }\n\na {\n  color: {{!!theme_color}};\n  text-decoration: none; }\n\nul, ol {\n  list-style-position: inside;\n  line-height: 1.8;\n  margin: 0 0 40px;\n  padding: 0; }\n  ul ul, ul ol, ol ul, ol ol {\n    margin: 10px 0 0 20px; }\n  ul li, ol li {\n    margin: 0 0 10px; }\n    ul li:last-of-type, ol li:last-of-type {\n      margin-bottom: 0; }\n\nblockquote {\n  border-left: 1px dotted #303030;\n  margin: 40px 0;\n  padding: 5px 30px; }\n  blockquote p {\n    color: #AEADAD;\n    display: block;\n    font-style: italic;\n    margin: 0;\n    width: 100%; }\n\nimg {\n  display: block;\n  margin: 40px 0;\n  width: auto;\n  max-width: 100%; }\n\npre {\n  background: #F1F0EA;\n  border: 1px solid #DDDBCC;\n  border-radius: 3px;\n  margin: 0 0 40px;\n  padding: 15px 20px; }\n\nhr {\n  border: none;\n  border-bottom: 1px dotted #303030;\n  margin: 45px 0; }\n\ntable {\n    margin-bottom: 40px;\n    width: 100%;\n}\ntable tbody > tr:nth-child(odd) > td,\ntable tbody > tr:nth-child(odd) > th {\n    background-color: #f7f7f3;\n}\ntable th {\n    padding: 0 10px 10px;\n    text-align: left;\n}\ntable td {\n    padding: 10px;\n}\ntable tr {\n    border-bottom: 1px dotted #AEADAD;\n}\n\n::selection {\n  background: #FFF5B8;\n  color: #000;\n  display: block; }\n\n::-moz-selection {\n  background: #FFF5B8;\n  color: #000;\n  display: block; }\n\n\n.hidden {\n  text-indent: -9999px;\n  visibility: hidden;\n  display: none; }\n\n.clearfix:after {\n  content: \"\";\n  display: table;\n  clear: both; }\n\ncode {\nbackground:transparent;\nborder:none;\n}\n\n---\n/*Title*/\n\n---\n\ndiv.tc-tiddler-frame > div.tc-tiddler-title > div.tc-titlebar h2.tc-title {\n    font-size: 52px;\n    display: block;\n    font-weight: 700;\n    margin: 15px 0;\n    text-align: center;\n    text-transform: uppercase;\n    color: #424242;\n    fill: #424242;\n    word-wrap: break-word;\n    font-family: \"Open Sans\", arial, sans-serif;\n    margin-block-start: 1em;\n    margin-block-end: 1em;\n    line-height: 1.2;\n    margin-bottom: 10px;\n}\n\n.tc-tiddler-title:after{\n    border-bottom: 1px dotted #303030;\n    content: \"\";\n    display: block;\n    margin: 30px auto 0;\n    width: 100px;\n}\n@media only screen and (max-width: 768px) {\ndiv.tc-tiddler-frame > div.tc-tiddler-title > div.tc-titlebar h2.tc-title {\nfont-size: 28px;\nmargin-top: 40px;\n}\n.tc-site-title, .tc-titlebar{\nfont-size:2em;\n}\n\n}\n\n\n\n/* Subtitle */\n\ndiv.tc-tiddler-frame .tc-subtitle {\ncolor: #AEADAD;\nfont-size: 14px;\nfont-weight: 600;\nline-height: 1;\nmargin: 25px auto 0;\ntext-align: center;\ntext-transform: uppercase;\ndisplay: block;\nmargin-block-start: 1em;\nmargin-block-end: 1em;\npadding-bottom:25px;\n\n}\n.tc-subtitle>a{\ndisplay:none\n}\n\n<$reveal type=nomatch state=\"$:/status/UserName\" text=\"\">\n.tc-subtitle:after{\ncontent: \"BY: {{{ [is[current]get[creator]] }}}\";\nfont-weight:700;\n}\n</$reveal>\n\n\n/* Body */\n\ndiv.tc-tiddler-frame> .tc-tiddler-body {\nmargin: 0 auto; \nposition: relative;\nwidth: 100%;\nmax-width: 810px;\nborder-top:6px solid #303030;\npadding-top:50px;\n}\n\n/* Tags */\n\nbutton.tc-tag-label, span.tc-tag-label {\nfont-size:14px;\nline-height: normal;\nbackground: transparent;\ntext-decoration: none;\ncolor:#666;\n}\n\n/* The tags in the viewTemplate has inbuilt style. Hence the use to 'important' to overcome that*/\ndiv.tc-tiddler-frame > div.tc-reveal >div.tc-tags-wrapper >span.tc-tag-list-item> button  {\ncolor: {{!!theme_color}} !important;\n}\n\n\n.tc-edit-tags .tc-tiddlylink.tc-tiddlylink-missing:hover, .tc-edit-tags .tc-tiddlylink.tc-tiddlylink-resolves:hover, .tc-edit-tags .tc-tiddlylink.tc-tiddlylink-shadow:hover  {\n    border-bottom: none;\npadding: 4px 14px 4px 14px;\n}\n\n/* Links */\n\n.tc-body a:hover {\n  border-bottom: 1px dotted {{!!theme_color}};\n  padding: 0 0 2px; }\n\n.tc-body a.tc-tiddlylink-missing {\n\tfont-style: normal;\n\tcolor: #237095;\n}\na.tc-tiddlylink-missing:hover, button.tc-tiddlylink:hover, a.tc-tiddlylink:hover {\n\ttext-decoration: none;\n  border-bottom: 1px dotted {{!!theme_color}};\n}\na.tc-tiddlylink-external {\n\ttext-decoration: none;\n\tcolor: #3C2BB1;\n\tbackground-color: inherit;\n}\na.tc-tiddlylink-external:hover {\n  border-bottom: 1px dotted {{!!theme_color}};\n}\n\n.tc-tag-list-item > span > div.tc-menu-list-item > a:hover {\n  border-bottom: none;\npadding: 0 14px 0 14px;\n}\n\ntc-block-dropdown tc-search-drop-down tc-popup-handle {\nborder-bottom: none;\npadding:initial;\n}\n\ndiv.tc-menu-list-item > a:hover {\nborder-bottom:none;\n}\n\n\n/* Tag Drop Down */\n.tc-edit-tags .tc-block-dropdown{\n    position: absolute;\n    min-width: 220px;\n    background-color: #FEFEFE;\n    white-space: nowrap;\n    z-index: 1000;\n    text-shadow: none;\n    color: #606060;\n    font-family: gotham, helvetica, arial, sans-serif;\n    font-size: 13px;\n    font-weight: 500;\n    right: 70%;\n    padding: 15px 7px;\n    border: 3px solid rgba(217, 217, 217, .4);\n    border-top: 1px solid rgba(217, 217, 217, .4);\n    border-left: 1px solid rgba(217, 217, 217, .4);\n    margin: 1rem;\n    margin-top: 4px;\n    text-overflow: ellipsis;\n    box-shadow: 0 6px 20px rgba(0, 0, 0, .04), -6px 8px 15px rgba(0, 0, 0, .04), 6px 8px 15px rgba(0, 0, 0, .04);\n}\n\n---\n/* Site Header */\n\n---\n\n.site-header {\n    padding: 60px 0 0;\n    overflow: auto;\n    text-align: center;\n    text-transform: uppercase;\n}\n.site-title-wrapper {\n    display: table;\n    margin: 0 auto;\n}\n.site-title {\n    float: left;\n    font-size: 14px;\n    font-weight: 600;\n    margin: 0;\n    text-transform: uppercase;\n}\n.site-title a {\n    float: left;\n    background: {{!!theme_color}};\n    color: #FEFEFE;\n    padding: 5px 10px 6px;\n}\n.site-title a:hover {\n    background: #303030;\n    border-bottom: none;\n    padding: 5px 10px 6px;\n}\n.site-logo {\n    display: block;\n}\n.site-logo img {\n    margin: 0;\n}\n.site-nav {\n    list-style: none;\n    margin: 28px 0 10px;\n}\n\n.site-nav-item {\n    display: inline-block;\n    font-size: 14px;\n    font-weight: 700;\n    margin: 0 10px;\n    text-transform: uppercase;\n    color: {{!!theme_color}};\n    text-decoration: none;\n    padding-right: 15px;\n    font-family: \"Open Sans\", arial, sans-serif;\n    line-height: 1.8;\n    text-align: center;\n}\n.site-nav-item:hover {\n    color: #424242;\n}\n\n\n---\n/* Table of Contents */\n\n---\n\n\n.post-stub-title {\ndisplay: inline-block;\nmargin: 0;\ntext-transform: none;\nfont-size: 16px;\n}\n\n.post-index{\nmargin: 0 auto;\nposition: relative;\nwidth: 100%;\nmax-width: 889px;\n}\n\n.post-index ol {\nlist-style: none !important;\ndisplay: block;\nmargin-block-start: 1em;\nmargin-block-end: 1em;\n\n}\n.post-index li li a {\nfont-weight: 900;\npadding-inline-start: 5px;\nmargin: 0 0 0;\npadding: 0 0 0 25px;\ntransition: all 0.2s ease-in-out;\n}\n.post-index li li a:hover{\npadding: 20px 12px;\n}\n\n.post-stub {\ncolor: #424242;\nfont-family: \"Open Sans\", arial, sans-serif;\nfont-size: 18px;\nline-height: 1.8;\ndisplay: list-item;\ntext-align: match-parent;\nborder-bottom: 1px dotted #303030;\nmargin: 0;\nposition: relative;\n\npadding: 20px 5px;\n}\n\n.post-stub a {\n color: #424242;\npadding-inline-start: 10px;\nmargin: 80px 40px 0;\npadding: 35px 0 0;\n\n}\n\n.post-stub a:hover{\ncolor:{{!!theme_color}};\noutline: 0;\nborder-bottom:none;\n}\n\n\n---\n/*Theme Sake */\n\n---\n\n.tc-tiddler-frame {\n    padding: 0 42px 42px 42px;\n}\n\n@media only screen and (max-width: 768px) {\n.tc-tiddler-frame {\n    padding: 0 10px 10px 10px;\n}\n.tc-story-river {\npadding: 20px;\n}\n}\n\n\n\n---\n/*GENERIC*/\n\n---\n\n.tc-control-panel textarea,\n .tc-control-panel input[type=\"text\"],\n .tc-control-panel input[type=\"search\"],\n .tc-control-panel input[type=\"\"],\n .tc-control-panel input:not([type]),\n .tc-edit-field-value input[type=\"text\"],\n .tc-type-selector input[type=\"text\"] {\n     border: 1px solid #c4c4c4;\n }\n\n\n .tc-block-dropdown {\n     border-radius: 4px;\n }\n\n\n .tc-block-dropdown a:hover {\n     background-color: #f0e68c;\n }\n\n\n .tc-drop-down {\n     color: #606060;\n     font-family: gotham, helvetica, arial, sans-serif;\n     font-size: 13px;\n     font-weight: 500;\n     position: relative;\n     right: 70%;\n     padding: 15px 7px;\n     border-radius: 2px;\n     border: 3px solid rgba(217, 217, 217, .4);\n     border-top: 1px solid rgba(217, 217, 217, .4);\n     border-left: 1px solid rgba(217, 217, 217, .4);\n     margin: 1rem;\n     margin-top: 4px;\n     min-width: calc(100% + 100px);\n     width: -moz-fit-content;\n     overflow: visible;\n     text-overflow: ellipsis;\n     box-shadow: 0 6px 20px rgba(0, 0, 0, .04), -6px 8px 15px rgba(0, 0, 0, .04), 6px 8px 15px rgba(0, 0, 0, .04);\n }\n\n\n .tc-drop-down a:hover,\n .tc-drop-down button:hover,\n .tc-drop-down .tc-file-input-wrapper:hover button {\n     color: #444;\n     background-color: #f0e68c;\n     text-decoration: none;\n }\n\n\n .tc-titlebar .tc-drop-down {\n     min-width: calc(100% + 30px);\n }\n\n\n .tc-password-wrapper {\n     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) !important;\n     background-color: #fbfcFe !important;\n     border: 1px solid rgb(225, 225, 225) !important;\n     box-shadow: 0 6px 20px rgba(0, 0, 0, .04), -6px 8px 15px rgba(0, 0, 0, .04), 6px 8px 15px rgba(0, 0, 0, .04) !important;\n     height: 300px !important;\n     width: 300px !important;\n }\n\n\n .tc-password-wrapper input {\n     width: 100% !important;\n     color: #000 !important;\n     border: 1px solid rgb(225, 225, 225);\n     padding: 5px;\n     margin-bottom: 5px;\n }\n\n .tc-password-wrapper button {\n     width: 100%;\n     border-radius: 5px;\n     text-decoration: none;\n     color: #fff;\n     background-color: #26a69a;\n     text-align: center;\n     letter-spacing: .5px;\n     transition: .2s ease-out;\n     cursor: pointer;\n     border: none;\n     padding: 5px;\n     margin-bottom: 5px;\n }\n\n .tc-password-wrapper h1 {\n     color: #666;\n     font-size: 13px !important;\n     text-transform: uppercase;\n     text-align: center;\n }\n\n hr {\n     color: #ececec;\n }\n\n .tg td {\n     font-size: 13.5px;\n     overflow: hidden;\n     padding: .3em;\n     word-break: normal;\n     border-width: 0;\n }\n\n tr:nth-child(even) {\n     width: 100%;\n     background-color: #f6f3f6;\n }\n\n\n---\n /* TIDDLER TOOLBAR */\n\n---\n @media only screen and (min-width: 768px) {\n\n\n .tc-tiddler-view-frame .tc-tiddler-controls svg {\n     fill: transparent;\n }\n\n .tc-tiddler-view-frame .tc-tiddler-controls:hover svg,\n .tc-tiddler-view-frame .tc-tiddler-controls .tc-popup svg {\n     fill: #cccccc;\n }\n}\n---\n /* BUTTON ANIMATION */\n\n---\n \n .tc-page-controls svg,\n .tc-tiddler-controls svg,\n .tc-topbar button svg,\n .tc-sidebar-scrollable {\n     -webkit-transition: fill 200ms ease-in-out;\n     -moz-transition: fill 200ms ease-in-out;\n     transition: fill 200ms ease-in-out;\n }\n\n---\n /** * Notification */\n\n---\n \n .tc-notification {\n     position: fixed;\n     top: 35px;\n     right: 50px;\n     z-index: 1300;\n     width: 300px;\n     height: 50px;\n     background-color: #FABF67;\n     border: none;\n     color: black;\n     text-align: center;\n     line-height: normal;\n     padding-top: 10px;\n }\n\n---\n /** Search **/\n\n---\n \n input[type='search'] {\n     -webkit-transition: border .1s;\n     transition: border .1s;\n     position: relative;\n     background-color: transparent;\n     border: 1px solid;\n     border-radius: 2px;\n     border-color: #e1e1e1;\n     padding: 10px 40px 9px 8px;\n     margin: 0;\n     outline: none;\n     box-sizing: border-box;\n     width: 100%;\n }\n\n input[type='search']:focus,\n input[type='search'].focus {\n     border-color: #c1c1c1;\n }\n\n\n---\n/*Sidebar*/\n\n--- \n\n.tc-sidebar-lists button {\n    color: {{!!theme_color}};\n    fill: {{!!theme_color}};\n}\n.tc-sidebar-lists .tc-tab-buttons button {\n    display: inline-block;\n    font-size: 14px;\n    font-weight: 700;\n    margin: 0 10px;\n    text-transform: uppercase;\n    color: {{!!theme_color}};\n    text-decoration: none;\n    padding-right: 15px;\n    font-family: \"Open Sans\", arial, sans-serif;\n    line-height: 1.8;\n    text-align: center;\n    padding: 0;\n    background: none;\n    border: none;\n}\n.tc-sidebar-lists .tc-tab-buttons button.tc-tab-selected {\n    background-color: transparent;\n    border-left: none;\n    border-top: none;\n    border-right: none;\n    color: #666;\n}\n.tc-sidebar-lists .tc-search .tc-popup-handle {\n    width: 60%;\n}\n.tc-sidebar-lists .tc-tab-set .tc-tab-content .tc-reveal button {\n    border: none;\n    outline: none;\n    background: transparent;\n    color: #666;\n    fill: #666;\n}\n.tc-sidebar-lists .tc-tab-set .tc-tab-content .tc-reveal .tc-more-sidebar .tc-tab-set .tc-tab-buttons button.tc-tab-selected {\n    color: blue;\n    fill: blue;\n}\n.tc-sidebar-lists .tc-tab-content i.tc-muted {\n    display: none;\n}\n\n/* Search drop down of Sidebar */\n.tc-sidebar-lists .tc-search-drop-down a.tc-tiddlylink:hover{\npadding: 0px 10px 0px 10px;\n}\n\n\n---\n/* Media Queries */\n\n---\n\n\n\n@media only screen and (max-width: 600px) {\n  h1, h2 {\n    margin-bottom: 20px; }\n\n  p {\n    margin-bottom: 20px; }\n\n  ul, ol {\n    margin-bottom: 20px; }\n\n  img {\n    margin: 30px 0; }\n\n  blockquote {\n    margin: 30px 0; }\n\n  pre {\n    margin: 30px 0; }\n\n  hr {\n    margin: 35px 0; }\n\n  .site-header {\n    padding-top: 60px; }\n\n  .site-nav-item {\n    display: block;\n    margin: 15px 0; }\n\n}\n",
+        "bag": "default",
+        "revision": "0",
+        "type": "text/vnd.tiddlywiki",
+        "title": "$:/themes/ghostwriter/stylesheet/main",
+        "theme_color": "#f03838",
+        "tags": "$:/tags/Stylesheet $:/irreverent-mudblood/ghostwriter",
+        "modifier": "venomspinner",
+        "modified": "20161101082045442",
+        "creator": "venomspinner",
+        "created": "20161028105046905"
+    },
+    {
+        "text": " <header class=\"site-header\" style=\"text-align:center;\">\n            <div class=\"container\">\n                <div class=\"site-title-wrapper\">\n                        <h1 class=\"site-title\"><a href=\"#\">{{$:/SiteTitle}}</a></h1>\n                </div>\n                <div class=\"site-nav\">\n                   <$button class=\"site-nav-item tc-btn-invisible\" message=\"tm-home\">HOME</$button><$button to=\"TableOfContents\" class=\"site-nav-item tc-btn-invisible\">Contents</$button><$button to=\"$:/About\" class=\"site-nav-item tc-btn-invisible\">About</$button>\n                </div>\n            </div>\n        </header>",
+        "bag": "default",
+        "revision": "0",
+        "type": "text/vnd.tiddlywiki",
+        "title": "$:/themes/ghostwriter/Topbar",
+        "tags": "$:/tags/AboveStory $:/irreverent-mudblood/ghostwriter",
+        "modifier": "venomspinner",
+        "modified": "20161101082201132",
+        "creator": "venomspinner",
+        "created": "20161028092007386"
+    },
+    {
+        "text": "<style>\n@media only screen and (min-width: 768px) {\n.tc-sidebar-scrollable { \nbackground-color: #FEFEFE; \nz-index: 1000;\npadding: 42px 0 28px 42px;\nwidth:55%;\nborder-left: 1px solid #e1e1e1;\n}\n}\n\n@media only screen and (max-width: 768px) {\n.tc-sidebar-scrollable { \nbackground-color:#FEFEFE; \npadding: 42px 0 28px 42px;\nz-index: 1000; \nwidth:100%; \nborder-left: 1px solid #e1e1e1;\nleft:10%;}\n}\n</style>",
+        "bag": "default",
+        "revision": "0",
+        "type": "text/vnd.tiddlywiki",
+        "title": "$:/irreverent-mudblood/overlay-sidebar/backgroundstyle",
+        "tags": "$:/OverlaySidebar $:/irreverent-mudblood/ghostwriter",
+        "modified": "20161031174446330",
+        "created": "20161030153934135"
+    },
+    {
+        "text": "<style>.tc-sidebar-scrollable { background-color: rgba(0,0,0,0.0); z-index: -1; }</style>",
+        "bag": "default",
+        "revision": "0",
+        "type": "text/vnd.tiddlywiki",
+        "title": "$:/irreverent-mudblood/overlay-sidebar/backgroundstyle2",
+        "tags": "$:/OverlaySidebar $:/irreverent-mudblood/ghostwriter",
+        "modifier": "Dr. Rizwan Ishak",
+        "modified": "20161031174446321",
+        "creator": "Dr. Rizwan Ishak",
+        "created": "20160829073842702"
+    },
+    {
+        "text": ".roundbtn {\nbackground-color:#FFFDE7;\nfont-size: 25px; \nposition: relative;\ndisplay: inline-block;\nwidth: 35px;\nheight: 35px;\ncursor: pointer; \nborder: none; \nborder-radius:100px; \nbox-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);fill: #fff;\n}\n\n.roundbtn span {\nfont-size:15px;  \nposition: absolute;  \ntop: 0;  right: 0;    \nbottom: 0;    \nleft: 0;    \noverflow: auto;    \nwidth: 50%;    \nheight: 50%;    \nmargin: auto; fill: #fff;\n}",
+        "bag": "default",
+        "revision": "0",
+        "type": "text/vnd.tiddlywiki",
+        "title": "$:/irreverent-mudblood/overlay-sidebar/stylesheet",
+        "tags": "$:/tags/Stylesheet $:/OverlaySidebar $:/irreverent-mudblood/ghostwriter",
+        "modified": "20161031174446312",
+        "created": "20161030153009897"
+    },
+    {
+        "text": "alert-background: #ffe476\nalert-border: #b99e2f\nalert-highlight: #881122\nalert-muted-foreground: #b99e2f\nbackground: #FEFEFE\nblockquote-bar: <<colour muted-foreground>>\nbutton-background: \nbutton-foreground: \nbutton-border: \ncode-background: #f7f7f9\ncode-border: #e1e1e8\ncode-foreground: #dd1144\ndirty-indicator: #ff0000\ndownload-background: #34c734\ndownload-foreground: <<colour background>>\ndragger-background: <<colour foreground>>\ndragger-foreground: <<colour background>>\ndropdown-background: <<colour background>>\ndropdown-border: <<colour muted-foreground>>\ndropdown-tab-background-selected: #fff\ndropdown-tab-background: #ececec\ndropzone-background: rgba(0,200,0,0.7)\nexternal-link-background-hover: inherit\nexternal-link-background-visited: inherit\nexternal-link-background: inherit\nexternal-link-foreground-hover: inherit\nexternal-link-foreground-visited: #0000aa\nexternal-link-foreground: #0000ee\nforeground: #333333\nmessage-background: #ecf2ff\nmessage-border: #cfd6e6\nmessage-foreground: #547599\nmodal-backdrop: <<colour foreground>>\nmodal-background: <<colour background>>\nmodal-border: #999999\nmodal-footer-background: #f5f5f5\nmodal-footer-border: #dddddd\nmodal-header-border: #eeeeee\nmuted-foreground: #bbb\nnotification-background: #ffffdd\nnotification-border: #999999\npage-background: #fefefe\npre-background: #f5f5f5\npre-border: #cccccc\nprimary: #5778d8\nsidebar-button-foreground: <<colour foreground>>\nsidebar-controls-foreground-hover: #000000\nsidebar-controls-foreground: #aaaaaa\nsidebar-foreground-shadow: rgba(255,255,255, 0.8)\nsidebar-foreground: #acacac\nsidebar-muted-foreground-hover: #444444\nsidebar-muted-foreground: #c0c0c0\nsidebar-tab-background-selected: #f4f4f4\nsidebar-tab-background: #e0e0e0\nsidebar-tab-border-selected: <<colour tab-border-selected>>\nsidebar-tab-border: <<colour tab-border>>\nsidebar-tab-divider: #e4e4e4\nsidebar-tab-foreground-selected: \nsidebar-tab-foreground: <<colour tab-foreground>>\nsidebar-tiddler-link-foreground-hover: #444444\nsidebar-tiddler-link-foreground: #999999\nsite-title-foreground: <<colour tiddler-title-foreground>>\nstatic-alert-foreground: #aaaaaa\ntab-background-selected: #ffffff\ntab-background: #d8d8d8\ntab-border-selected: #d8d8d8\ntab-border: #cccccc\ntab-divider: #d8d8d8\ntab-foreground-selected: <<colour tab-foreground>>\ntab-foreground: #666666\ntable-border: #dddddd\ntable-footer-background: #a8a8a8\ntable-header-background: #f0f0f0\ntag-background: \ntag-foreground: #f03838\ntiddler-background: <<colour background>>\ntiddler-border: <<colour background>>\ntiddler-controls-foreground-hover: #888888\ntiddler-controls-foreground-selected: #444444\ntiddler-controls-foreground: #cccccc\ntiddler-editor-background: #f8f8f8\ntiddler-editor-border-image: #ffffff\ntiddler-editor-border: #cccccc\ntiddler-editor-fields-even: #e0e8e0\ntiddler-editor-fields-odd: #f0f4f0\ntiddler-info-background: #f8f8f8\ntiddler-info-border: #dddddd\ntiddler-info-tab-background: #f8f8f8\ntiddler-link-background: <<colour background>>\ntiddler-link-foreground: <<colour primary>>\ntiddler-subtitle-foreground: #c0c0c0\ntiddler-title-foreground: #182955\ntoolbar-new-button: \ntoolbar-options-button: \ntoolbar-save-button: \ntoolbar-info-button: \ntoolbar-edit-button: \ntoolbar-close-button: \ntoolbar-delete-button: \ntoolbar-cancel-button: \ntoolbar-done-button: \nuntagged-background: #999999\nvery-muted-foreground: #888888",
+        "bag": "default",
+        "revision": "0",
+        "type": "application/x-tiddler-dictionary",
+        "title": "$:/palettes/Vanilla",
+        "tags": "$:/tags/Palette $:/irreverent-mudblood/ghostwriter",
+        "name": "Vanilla",
+        "modifier": "venomspinner",
+        "modified": "20161031174446260",
+        "description": "Pale and unobtrusive",
+        "creator": "venomspinner",
+        "created": "20161028065018599"
+    },
+    {
+        "text": "$:/themes/tiddlywiki/vanilla",
+        "bag": "default",
+        "revision": "0",
+        "type": "text/vnd.tiddlywiki",
+        "title": "$:/theme",
+        "tags": "$:/irreverent-mudblood/ghostwriter",
+        "modified": "20161031174446387",
+        "created": "20161028064919178"
+    },
+    {
+        "text": "\\define tocghost-caption()\n<$set name=\"tv-wikilinks\" value=\"no\">\n<$transclude field=\"caption\">\n<span class=\"post-stub-title\"><$view field=\"title\"/></span>\n</$transclude>\n<$transclude field=\"caption\">\n/ Published <span class=\"post-stub-date\"> <$view field=\"created\" format=\"date\" template=\"DDth MMM YYYY\"/></span>\n</$transclude>\n</$set>\n\\end\n\n\\define tocghost-body(rootTag,tag,sort:\"\")\n<ol class=\"post-list\">\n<$list filter=\"\"\"[all[shadows+tiddlers]tag[$tag$]!has[draft.of]$sort$]\"\"\">\n<li class=\"post-stub\">\n<$list filter=\"[all[current]tocghost-link[no]]\" emptyMessage=\"<$link><$view field='caption'><$view field='title'/></$view></$link>\">\n<<tocghost-caption>>\n</$list>\n<$list filter=\"\"\"[all[current]] -[[$rootTag$]]\"\"\">\n<$macrocall $name=\"tocghost-body\" rootTag=\"\"\"$rootTag$\"\"\" tag=<<currentTiddler>> sort=\"\"\"$sort$\"\"\" itemClassFilter=\"\"\"$itemClassFilter$\"\"\"/>\n</$list>\n</li>\n</$set>\n</$list>\n</ol>\n\\end\n\n\n\\define tocghost-linked-selective-expandable-body(tag,sort:\"\",itemClassFilter)\n<$set name=\"tocghost-state\" value=<<qualify \"\"\"$:/state/tocghost/$tag$-$(currentTiddler)$\"\"\">>>\n<$set name=\"tocghost-item-class\" filter=\"\"\"$itemClassFilter$\"\"\" value=\"tocghost-item-selected\" emptyValue=\"tocghost-item\">\n<li class=\"post-stub\">\n<$link>\n<$list filter=\"[all[current]tagging[]limit[1]]\" variable=\"ignore\" emptyMessage=\"<$button class='tc-btn-invisible'>{{$:/core/images/blank}}</$button>\">\n<$reveal type=\"nomatch\" state=<<tocghost-state>> text=\"open\">\n<$button set=<<tocghost-state>> setTo=\"open\" class=\"tc-btn-invisible\">\n{{$:/core/images/right-arrow}}\n</$button>\n</$reveal>\n<$reveal type=\"match\" state=<<tocghost-state>> text=\"open\">\n<$button set=<<tocghost-state>> setTo=\"close\" class=\"tc-btn-invisible\">\n{{$:/core/images/down-arrow}}\n</$button>\n</$reveal>\n</$list>\n<<tocghost-caption>>\n</$link>\n<$reveal type=\"match\" state=<<tocghost-state>> text=\"open\">\n<$macrocall $name=\"tocghost-selective-expandable\" tag=<<currentTiddler>> sort=\"\"\"$sort$\"\"\" itemClassFilter=\"\"\"$itemClassFilter$\"\"\"/>\n</$reveal>\n</li>\n</$set>\n</$set>\n\\end\n\n\\define tocghost-unlinked-selective-expandable-body(tag,sort:\"\",itemClassFilter)\n<$set name=\"tocghost-state\" value=<<qualify \"\"\"$:/state/tocghost/$tag$-$(currentTiddler)$\"\"\">>>\n<$set name=\"tocghost-item-class\" filter=\"\"\"$itemClassFilter$\"\"\" value=\"tocghost-item-selected\" emptyValue=\"tocghost-item\">\n<li class=\"post-stub\">\n<$list filter=\"[all[current]tagging[]limit[1]]\" variable=\"ignore\" emptyMessage=\"<$button class='tc-btn-invisible'>{{$:/core/images/blank}}</$button> <$view field='caption'><$view field='title'/></$view>\">\n<$reveal type=\"nomatch\" state=<<tocghost-state>> text=\"open\">\n<$button set=<<tocghost-state>> setTo=\"open\" class=\"tc-btn-invisible\">\n{{$:/core/images/right-arrow}}\n<<tocghost-caption>>\n</$button>\n</$reveal>\n<$reveal type=\"match\" state=<<tocghost-state>> text=\"open\">\n<$button set=<<tocghost-state>> setTo=\"close\" class=\"tc-btn-invisible\">\n{{$:/core/images/down-arrow}}\n<<tocghost-caption>>\n</$button>\n</$reveal>\n</$list>\n<$reveal type=\"match\" state=<<tocghost-state>> text=\"open\">\n<$macrocall $name=\"\"\"tocghost-selective-expandable\"\"\" tag=<<currentTiddler>> sort=\"\"\"$sort$\"\"\" itemClassFilter=\"\"\"$itemClassFilter$\"\"\"/>\n</$reveal>\n</li>\n</$set>\n</$set>\n\\end\n\n\\define tocghost-selective-expandable-empty-message()\n<<tocghost-linked-selective-expandable-body tag:\"\"\"$(tag)$\"\"\" sort:\"\"\"$(sort)$\"\"\" itemClassFilter:\"\"\"$(itemClassFilter)$\"\"\">>\n\\end\n\n\\define tocghost-selective-expandable(tag,sort:\"\",itemClassFilter)\n<$vars tag=\"\"\"$tag$\"\"\" sort=\"\"\"$sort$\"\"\" itemClassFilter=\"\"\"$itemClassFilter$\"\"\">\n<ol class=\"post-list\">\n<$list filter=\"[all[shadows+tiddlers]tag[$tag$]!has[draft.of]$sort$]\">\n<$list filter=\"[all[current]tocghost-link[no]]\" variable=\"ignore\" emptyMessage=<<tocghost-selective-expandable-empty-message>>>\n<<tocghost-unlinked-selective-expandable-body tag:\"\"\"$tag$\"\"\" sort:\"\"\"$sort$\"\"\" itemClassFilter:\"\"\"$itemClassFilter$\"\"\">>\n</$list>\n</$list>\n</ol>\n</$vars>\n\\end\n",
+        "bag": "default",
+        "revision": "0",
+        "type": "text/vnd.tiddlywiki",
+        "title": "$:/ghostwriter/tocghostMacro",
+        "tags": "$:/tags/Macro $:/irreverent-mudblood/ghostwriter",
+        "modified": "20161031174446250",
+        "created": "20161031140339462"
+    },
+    {
+        "text": "200px",
+        "bag": "default",
+        "revision": "0",
+        "type": "text/vnd.tiddlywiki",
+        "title": "$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint",
+        "modified": "20161031174446379",
+        "created": "20161029180537315"
+    },
+    {
+        "text": "200px",
+        "bag": "default",
+        "revision": "0",
+        "type": "text/vnd.tiddlywiki",
+        "title": "$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth",
+        "modified": "20161031174446371",
+        "created": "20161029180543487"
+    },
+    {
+        "text": "60%",
+        "bag": "default",
+        "revision": "0",
+        "type": "text/vnd.tiddlywiki",
+        "title": "$:/themes/tiddlywiki/vanilla/metrics/storyright",
+        "modified": "20161031174446364",
+        "created": "20161028091853396"
+    },
+    {
+        "text": "100%",
+        "bag": "default",
+        "revision": "0",
+        "type": "text/vnd.tiddlywiki",
+        "title": "$:/themes/tiddlywiki/vanilla/metrics/storywidth",
+        "modified": "20161031174446356",
+        "created": "20161028091859742"
+    },
+    {
+        "text": "100%",
+        "bag": "default",
+        "revision": "0",
+        "type": "text/vnd.tiddlywiki",
+        "title": "$:/themes/tiddlywiki/vanilla/metrics/tiddlerwidth",
+        "modified": "20161031174446349",
+        "created": "20161028091912073"
+    },
+    {
+        "text": "fixed-fluid",
+        "bag": "default",
+        "revision": "0",
+        "type": "text/vnd.tiddlywiki",
+        "title": "$:/themes/tiddlywiki/vanilla/options/sidebarlayout",
+        "modifier": "venomspinner",
+        "modified": "20161031174446506",
+        "creator": "venomspinner",
+        "created": "20161028134032160"
+    },
+    {
+        "text": "|Color theme|<$edit-text tiddler=\"$:/themes/ghostwriter/stylesheet/main\"  field=\"theme_color\"/>|",
+        "bag": "default",
+        "revision": "1",
+        "type": "text/vnd.tiddlywiki",
+        "title": "$:/themes/ghostwriter/themecolor",
+        "tags": "$:/tags/ControlPanel/Appearance",
+        "modified": "20161101104137011",
+        "created": "20161101103541902",
+        "caption": "Color Theme"
+    }
+]
