@@ -1,0 +1,8 @@
+caption: Color Theme
+created: 20161101103541902
+modified: 20161101104137011
+tags: $:/tags/ControlPanel/Appearance
+title: $:/themes/ghostwriter/themecolor
+type: text/vnd.tiddlywiki
+
+|Color theme|<$edit-text tiddler="$:/themes/ghostwriter/stylesheet/main"  field="theme_color"/>|

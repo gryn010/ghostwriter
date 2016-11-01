@@ -1,6 +1,6 @@
 created: 20161031175711824
 creator: venomspinner
-modified: 20161101074744197
+modified: 20161101155046512
 modifier: venomspinner
 tags: Introduction
 title: About the Topbar
@@ -19,3 +19,5 @@ where //Contents// is the root tag. Should you decide to stay witht the usual TW
 * ''About'' - Where you can furnish credits or basic info about your blog. 
 
 All three can be customised and if needed more buttons added by editing [[$:/ghostwriter/Topbar]]
+
+Also to be noted is that you can change the color theme by going to Control Panel > Appearance > Color Theme
