@@ -1,9 +1,10 @@
 created: 20161028105046905
 creator: venomspinner
-modified: 20161031183044362
+modified: 20161101082045442
 modifier: venomspinner
 tags: $:/tags/Stylesheet $:/irreverent-mudblood/ghostwriter
-title: $:/ghostwriter/stylesheet/main
+theme_color: #f03838
+title: $:/themes/ghostwriter/stylesheet/main
 type: text/vnd.tiddlywiki
 
 ---
@@ -54,7 +55,7 @@ p {
   margin: 0 0 30px; }
 
 a {
-  color: #f03838;
+  color: {{!!theme_color}};
   text-decoration: none; }
 
 ul, ol {
@@ -236,7 +237,7 @@ color:#666;
 
 /* The tags in the viewTemplate has inbuilt style. Hence the use to 'important' to overcome that*/
 div.tc-tiddler-frame > div.tc-reveal >div.tc-tags-wrapper >span.tc-tag-list-item> button  {
-color: #f03838 !important;
+color: {{!!theme_color}} !important;
 }
 
 
@@ -248,7 +249,7 @@ padding: 4px 14px 4px 14px;
 /* Links */
 
 .tc-body a:hover {
-  border-bottom: 1px dotted #f03838;
+  border-bottom: 1px dotted {{!!theme_color}};
   padding: 0 0 2px; }
 
 .tc-body a.tc-tiddlylink-missing {
@@ -257,7 +258,7 @@ padding: 4px 14px 4px 14px;
 }
 a.tc-tiddlylink-missing:hover, button.tc-tiddlylink:hover, a.tc-tiddlylink:hover {
 	text-decoration: none;
-  border-bottom: 1px dotted #f03838;
+  border-bottom: 1px dotted {{!!theme_color}};
 }
 a.tc-tiddlylink-external {
 	text-decoration: none;
@@ -265,7 +266,7 @@ a.tc-tiddlylink-external {
 	background-color: inherit;
 }
 a.tc-tiddlylink-external:hover {
-  border-bottom: 1px dotted #f03838;
+  border-bottom: 1px dotted {{!!theme_color}};
 }
 
 .tc-tag-list-item > span > div.tc-menu-list-item > a:hover {
@@ -330,7 +331,7 @@ border-bottom:none;
 }
 .site-title a {
     float: left;
-    background: #f03838;
+    background: {{!!theme_color}};
     color: #FEFEFE;
     padding: 5px 10px 6px;
 }
@@ -356,7 +357,7 @@ border-bottom:none;
     font-weight: 700;
     margin: 0 10px;
     text-transform: uppercase;
-    color: #f03838;
+    color: {{!!theme_color}};
     text-decoration: none;
     padding-right: 15px;
     font-family: "Open Sans", arial, sans-serif;
@@ -429,7 +430,7 @@ padding: 35px 0 0;
 }
 
 .post-stub a:hover{
-color: #f03838;
+color:{{!!theme_color}};
 outline: 0;
 border-bottom:none;
 }
@@ -657,8 +658,8 @@ padding: 20px;
 --- 
 
 .tc-sidebar-lists button {
-    color: #f03838;
-    fill: #f03838;
+    color: {{!!theme_color}};
+    fill: {{!!theme_color}};
 }
 .tc-sidebar-lists .tc-tab-buttons button {
     display: inline-block;
@@ -666,7 +667,7 @@ padding: 20px;
     font-weight: 700;
     margin: 0 10px;
     text-transform: uppercase;
-    color: #f03838;
+    color: {{!!theme_color}};
     text-decoration: none;
     padding-right: 15px;
     font-family: "Open Sans", arial, sans-serif;
